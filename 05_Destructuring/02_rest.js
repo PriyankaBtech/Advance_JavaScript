@@ -33,4 +33,3 @@ function manyArguments() {
   }
   
   console.log(details("name", "age", "location", "id")) // all convert into array form
-  
