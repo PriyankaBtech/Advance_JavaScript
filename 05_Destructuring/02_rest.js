@@ -33,3 +33,10 @@ function manyArguments() {
   }
   
   console.log(details("name", "age", "location", "id")) // all convert into array form
+
+
+
+function check(a, ...b){
+    console.log(a, b)
+}
+check(1, 4, 5, 6, 4, 3) // 1 [ 4, 5, 6, 4, 3 ]
