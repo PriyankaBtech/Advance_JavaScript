@@ -1,16 +1,12 @@
 /******************************* Promise Constructor ************************************/
 
-
-
 // Syntax :
-
 
 /*
 new Promise(function (resolve, reject) {
     // Asynchronous operation
 })
 */
-
 
 function createPromise() {
      return new Promise(function exec(resolve, reject){

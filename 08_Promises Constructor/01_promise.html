@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- write a promise which enters the resolved state if the random number generated is greater than
+0.5 and the promise gets rejected if the random number generated is lesser than 0.5. -->
+
+<!-- A promise constructor is used to create a new Promise -->
+<!-- SYNTAX:
+new Promise(function (resolve, reject) {
+// Asynchronous operation
+}) -->
+
+<!-- Apply Javascript -->
+<script>
+
+    let newPromise = new Promise((resolve, reject) => {
+        let randomNumber = Math.random()
+        console.log(randomNumber)
+        if(randomNumber > 0.5) {
+            resolve("The Promise is resolved. The number is greater than 0.5")
+        }else {
+            reject("The Promise is rejected. The number is lesser than 0.5")
+        }
+    })
+    console.log(newPromise)  
+</script>
+</body>
+</html>
