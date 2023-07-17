@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async</title>
+</head>
+<body>
+    <script>
+        /*
+        SYNTAX :
+        async function functionName() {
+             // Asynchronous operation
+             // ...
+             // Return a promise/value
+        }
+        */
+
+        async function printResult() {
+            return "Hello"            
+        }
+        console.log(printResult()) // Promise { 'Hello' }
+
+
+        async function printResult2() {
+            return "Hello Async"            
+        }
+        printResult2().then(function(result) {
+            console.log(result)
+        }) 
+        
+</script>
+    
+</body>
+</html>
+
+
