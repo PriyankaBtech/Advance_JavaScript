@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Handling in fetch()</title>
+</head>
+<body>
+    <!-- JavaScript -->
+    <script>
+         async function getQuotes() {
+            try {
+                const response = await fetch("https://type.fit/api/quotes")
+                const data = response.json(response)
+                console.log(data)     
+            } catch(error) {
+                console.log(error)
+            } finally {
+                console.log("API request closed")
+            }
+        }           
+
+        getQuotes()
+        // Promise {<pending>}
+        // API request closed
+
+    </script>    
+</body>
+</html>
