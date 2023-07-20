@@ -4,6 +4,7 @@ async function printResult() {
     return "Hello"            
 }
 console.log(printResult()) // Promise { 'Hello' }
+console.log(typeof printResult()) // object
 
 
 async function printResult2() {
